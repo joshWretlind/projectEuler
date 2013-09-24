@@ -20,10 +20,10 @@ vector<double> fibonacci;
  *             Space: O(N)
  **/
 void calculateFibonacci(){
-	fibonacci.insert(0,1);
-	fibonacci.insert(1,2);
+	fibonacci.push_back(1);
+	fibonacci.push_back(2);
 	for(int i = 2; fibonacci[i-2] + fibonacci[i-1] < 4000000; i++) {
-		fibonacci.insert(i,fibonacci[i-2] + fibonacci[i-1]);
+		fibonacci.push_back(fibonacci[i-2] + fibonacci[i-1]);
 	}
 }
 
