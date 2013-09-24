@@ -1,7 +1,7 @@
 /**
  * Author: Josh Wretlind
  * projectEuler problem 1
- * Print out multiples of 3 or 5 below 100
+ * Print out sum of all multiples of 3 or 5 below 100
  * Complexity: O(N)
  **/
 #include<iostream>
