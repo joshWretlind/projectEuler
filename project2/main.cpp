@@ -6,11 +6,12 @@
  *             Space: O(N)
  **/
 #include<iostream>
+#include<vector>
 
 using namespace std;
 
 //this is an array of fibonacci numbers
-double* fibonacci;
+vector<double> fibonacci;
 
 /**
  * caclulateFibonacci
@@ -29,7 +30,7 @@ void calculateFibonacci(){
 main() {
 	int count =0;
 	calculateFibonacci();
-	for(int i = 0; i < ((sizeof(fibonacci)/sizeof*(fibonacci)) -1); i++){
+	for(int i = 0; i < fibonacci.size(); i++){
 		count += fibonacci[i];
 	}
 	cout << count << endl;
