@@ -1,0 +1,49 @@
+#include<iostream>
+#include<cmath>
+#include<string>
+#include<sstream>
+
+using namespace std;
+
+string toString (int a)
+{
+    string str;
+    ostringstream temp;
+    temp<<a;
+    return temp.str();
+}
+string reverseString(string inputString){
+	string reverse = inputString;
+	for(int i = 1; i <= inputString.length(); i++) {
+		reverse[i-1] = inputString[inputString.length()-i];
+	}
+	return reverse;
+}
+bool isPalindrome(int numberToCheck){
+	string stringToCheck = toString(numberToCheck);
+	
+	
+	if(reverseString(stringToCheck) != stringToCheck){
+		return false;
+	}
+	return true;
+}
+
+int findLargestPalindrome(){
+	int currentMax = 100*100;
+	for(int i = 999; i >= 100; i--){
+		for(int j = 999; j >= 100; j--) {
+			int mult = i*j;
+			if(isPalindrome(mult) && mult > currentMax){
+				currentMax = mult;
+			}
+		} 
+	}
+	return currentMax;
+	
+}
+
+int main(){
+	cout << isPalindrome(251) << endl;
+	return 0;
+}
