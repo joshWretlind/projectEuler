@@ -11,9 +11,11 @@ using namespace std;
 main() {
 
 	int max = 1000;
+	int count = 0;
 	for(int i = 0; i <= max; i++) {
 		if(i%3 == 0 || i%5 == 0){
-			cout << i;
+			count += i;
 		}
 	}
+	cout << count;
 }
