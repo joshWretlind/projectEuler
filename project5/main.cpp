@@ -12,6 +12,6 @@ bool isDivisible(int n, int target){
 }
 
 int main() {
-	cout << isDivisable(10, 2520) << endl;
+	cout << isDivisible(10, 2520) << endl;
 	return 0;
 }
