@@ -17,7 +17,7 @@ int calculateFibonacci(){
 	fibonacci.push_back(1.0L);
 	fibonacci.push_back(1.0L);
 	int i;
-	for(i = 2; fibonacci[i-2] + fibonacci[i-1] < pow(10.0L,1000.0L); i++) {
+	for(i = 2; fibonacci[i-2] + fibonacci[i-1] < pow(10.0L,999.0L); i++) {
 		fibonacci.push_back(fibonacci[i-2] + fibonacci[i-1]);
 	}
 	return i;
