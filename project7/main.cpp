@@ -38,6 +38,6 @@ int findPrimesUpTo(long int target){
 }
 
 int  main(){
-	cout << findPrimesUpTo(10001) << endl;
+	cout << findPrimesUpTo(6) << endl;
 	return 0;
 }
