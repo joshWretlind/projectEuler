@@ -13,5 +13,5 @@ long double calculateSelfPowers(int size){
 
 int main(){
 	cout.precision(5000);
-	cout << calculateSelfPowers(10) << endl; 
+	cout << calculateSelfPowers(1000) << endl; 
 }
