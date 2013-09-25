@@ -15,6 +15,7 @@ vector<int> primes;
 int findLargestPrime(double target){
 	vector<int> internalPrimes;
 	primes = internalPrimes;
+	cout << target << endl;
 	double testToThisLimit = sqrt(target);
 	
 	int largestPrime = 0;
@@ -33,6 +34,10 @@ int findPrimesUpTo(long int target){
 	while(primes.size() < target){
 		findLargestPrime(i);
 		i++;
+	}
+
+	for(int i = 0; i < primes.size(); i++){
+		cout << " i " << primes[i] << endl;
 	}
 	return primes[i-1];
 }
