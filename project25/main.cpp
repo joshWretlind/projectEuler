@@ -24,5 +24,5 @@ int calculateFibonacci(){
 }
 
 int main(){
-	cout << calculateFibonacci() << endl;
+	cout << calculateFibonacci() + 1 << endl;
 }
