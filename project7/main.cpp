@@ -14,7 +14,7 @@ vector<int> primes;
 
 int findLargestPrime(double target){
 	vector<int> internalPrimes;
-	primes = internalPrimes
+	primes = internalPrimes;
 	double testToThisLimit = sqrt(target);
 	
 	int largestPrime = 0;
