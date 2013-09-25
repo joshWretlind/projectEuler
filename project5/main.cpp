@@ -15,7 +15,7 @@ int main() {
 	bool foundSmallestDivisiable = false;
 	int i = 0;
 	for(i = 0;  !foundSmallestDivisiable; i++){
-		foundSmallestDivisable = isDivisible(10,i);
+		foundSmallestDivisiable = isDivisible(10,i);
 
 	}
 	
