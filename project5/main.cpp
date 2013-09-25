@@ -15,10 +15,10 @@ int main() {
 	bool foundSmallestDivisiable = false;
 	int i = 0;
 	for(i = 3;  !foundSmallestDivisiable; i++){
-		foundSmallestDivisiable = isDivisible(10,i);
+		foundSmallestDivisiable = isDivisible(20,i);
 
 	}
 	
-	cout << i << endl;
+	cout << i -1 << endl;
 	return 0;
 }
