@@ -12,6 +12,13 @@ bool isDivisible(int n, int target){
 }
 
 int main() {
-	cout << isDivisible(10, 2520) << endl;
+	bool foundSmallestDivisiable = false;
+	int i = 0;
+	for(i = 0;  !foundSmallestDivisable; i++){
+		foundSmallestDivisable = isDivisable(10,i);
+
+	}
+	
+	cout << i << endl;
 	return 0;
 }
